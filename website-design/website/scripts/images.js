@@ -1,3 +1,5 @@
+// Some parts of this code may be from Stack Overflow
+
 const imageDialog = document.createElement('dialog');
 imageDialog.className = 'image-dialog';
 imageDialog.setAttribute('aria-labelledby', 'image-title');
@@ -17,15 +19,18 @@ let imageButton;
 let previousOverflow;
 
 function openImage(button) {
+    // Put the photo and its credit in the popup
     const photo = button.parentElement.querySelector('.photo');
     const original = photo.querySelector('img');
     const enlarged = imageDialog.querySelector('img');
     enlarged.src = original.src;
     enlarged.alt = original.alt;
     imageDialog.querySelector('#image-title').textContent = original.alt;
-    imageDialog.querySelector('figcaption').replaceChildren(
-        ...[...photo.querySelector('figcaption').childNodes].map((node) => node.cloneNode(true))
-    );
+    const caption = imageDialog.querySelector('figcaption');
+    caption.replaceChildren();
+    for (const node of photo.querySelector('figcaption').childNodes) {
+        caption.append(node.cloneNode(true));
+    }
     imageButton = button;
     previousOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
@@ -34,6 +39,7 @@ function openImage(button) {
 }
 
 for (const button of document.querySelectorAll('.enlarge-image')) {
+    // Let the photo open the popup too
     const original = button.parentElement.querySelector('.photo img');
     original.classList.add('enlarge-trigger');
     original.tabIndex = 0;
@@ -50,6 +56,7 @@ for (const button of document.querySelectorAll('.enlarge-image')) {
 
 imageDialog.querySelector('.close-image').addEventListener('click', () => imageDialog.close());
 imageDialog.addEventListener('click', (event) => {
+    // Close the popup when the outside area is clicked
     const bounds = imageDialog.getBoundingClientRect();
     if (event.target === imageDialog && (
         event.clientX < bounds.left || event.clientX > bounds.right ||
@@ -58,12 +65,14 @@ imageDialog.addEventListener('click', (event) => {
 });
 imageDialog.addEventListener('close', () => {
     document.body.style.overflow = previousOverflow;
-    imageButton?.focus();
+    // Put focus back on the image button
+    if (imageButton) imageButton.focus();
 });
 
 imageDialog.addEventListener('keydown', (event) => {
     if (event.key !== 'Tab') return;
-    const controls = [...imageDialog.querySelectorAll('button, a[href]')];
+    // Keep focus inside the popup when using Tab
+    const controls = imageDialog.querySelectorAll('button, a[href]');
     const first = controls[0];
     const last = controls[controls.length - 1];
     if (event.shiftKey && document.activeElement === first) {

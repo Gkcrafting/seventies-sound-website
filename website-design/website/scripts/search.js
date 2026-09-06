@@ -1,25 +1,36 @@
+// Some parts of this code may be from Stack Overflow
+
 const searchForm = document.querySelector('form[role="search"]');
 const searchInput = searchForm.elements.q;
 const results = document.querySelector('#search-results');
 const message = document.querySelector('#search-message');
-const cards = [...document.querySelectorAll('.artist, .music-sample')];
-const chips = [...document.querySelectorAll('[data-genre]')];
+const cards = document.querySelectorAll('.artist, .music-sample');
+const chips = document.querySelectorAll('[data-genre]');
 
 function normalise(text) {
     return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
 }
 
 function showResults() {
+    // Keep the search and genre in the URL after a refresh
     const params = new URLSearchParams(window.location.search);
     const query = params.get('q');
-    const genre = chips.some((chip) => chip.dataset.genre === params.get('genre'))
-        ? params.get('genre') : 'all';
+    const selectedGenre = params.get('genre');
+    let genre = 'all';
+    for (const chip of chips) {
+        if (chip.dataset.genre === selectedGenre) {
+            genre = selectedGenre;
+            break;
+        }
+    }
     searchInput.value = query || '';
     results.hidden = query === null && genre === 'all';
-    const words = normalise(query || '').split(/\s+/).filter(Boolean);
+    let words = [];
+    if (query) words = normalise(query).split(/\s+/).filter(Boolean);
     let count = 0;
 
     for (const chip of chips) {
+        // Show which genre is selected
         const selected = chip.dataset.genre === genre;
         chip.classList.toggle('selected', selected);
         chip.setAttribute('aria-pressed', String(selected));
@@ -28,11 +39,16 @@ function showResults() {
     for (const card of cards) {
         const text = normalise(card.textContent);
         const matchesGenre = genre === 'all' || card.dataset.genres.split(' ').includes(genre);
-        const matches = matchesGenre && words.every((word) => text.includes(word));
+        let matchesSearch = true;
+        for (const word of words) {
+            if (!text.includes(word)) matchesSearch = false;
+        }
+        const matches = matchesGenre && matchesSearch;
         card.hidden = !matches;
         if (matches) count += 1;
         if (!matches) {
-            card.querySelectorAll('audio').forEach((audio) => audio.pause());
+            // Stop videos and audio when a card is hidden
+            for (const audio of card.querySelectorAll('audio')) audio.pause();
             for (const player of card.querySelectorAll('.youtube-player')) {
                 if (!player.querySelector('iframe')) continue;
                 const button = document.createElement('button');
@@ -45,11 +61,25 @@ function showResults() {
     }
 
     for (const section of document.querySelectorAll('[data-track-section], #listening')) {
-        section.hidden = ![...section.querySelectorAll('.music-sample')].some((card) => !card.hidden);
+        let hasVisibleCard = false;
+        const sectionCards = section.querySelectorAll('.music-sample');
+        for (const card of sectionCards) {
+            if (!card.hidden) {
+                hasVisibleCard = true;
+                break;
+            }
+        }
+        section.hidden = !hasVisibleCard;
     }
 
     if (results.hidden) return;
-    const genreName = chips.find((chip) => chip.dataset.genre === genre).textContent.trim();
+    let genreName = '';
+    for (const chip of chips) {
+        if (chip.dataset.genre === genre) {
+            genreName = chip.textContent.trim();
+            break;
+        }
+    }
     if (query !== null && !words.length) {
         message.textContent = 'Enter an artist or song name, or browse below.';
     } else if (count === 0) {
@@ -62,6 +92,7 @@ function showResults() {
 }
 
 function updateUrl(params) {
+    // Change the URL without reloading the page
     const url = new URL(window.location.href);
     url.search = params.toString();
     url.hash = '';
@@ -71,6 +102,7 @@ function updateUrl(params) {
 
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
+    // Save the search in the URL so it can be shared
     const params = new URLSearchParams(window.location.search);
     params.set('q', searchInput.value.trim());
     updateUrl(params);
@@ -79,7 +111,9 @@ searchForm.addEventListener('submit', (event) => {
 
 for (const chip of chips) {
     chip.addEventListener('click', () => {
+        // Clear the search when a genre is clicked
         const params = new URLSearchParams(window.location.search);
+        params.delete('q');
         if (chip.dataset.genre === 'all') params.delete('genre');
         else params.set('genre', chip.dataset.genre);
         updateUrl(params);

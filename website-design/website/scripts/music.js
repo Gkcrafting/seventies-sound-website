@@ -1,4 +1,6 @@
-// This worked on localhost for me, but not on 127.0.0.1.
+// Some parts of this code may be from Stack Overflow
+
+// This worked on localhost for me, but not on 127.0.0.1
 if (window.location.hostname === '127.0.0.1') {
     const previewUrl = new URL(window.location.href);
     previewUrl.hostname = 'localhost';
@@ -7,8 +9,9 @@ if (window.location.hostname === '127.0.0.1') {
 
 for (const player of document.querySelectorAll('.youtube-player')) {
     player.addEventListener('click', (event) => {
-        if (!event.target.closest('.load-video')) return;
+        if (!event.target.classList.contains('load-video')) return;
 
+        // YouTube does not work when the page is opened as a file
         if (window.location.protocol === 'file:') {
             let notice = player.querySelector('.player-notice');
             if (!notice) {
@@ -25,6 +28,7 @@ for (const player of document.querySelectorAll('.youtube-player')) {
         }
 
         const frame = document.createElement('iframe');
+        // Load the video only when the visitor clicks Play
         const params = new URLSearchParams({
             origin: window.location.origin,
             playsinline: '1',

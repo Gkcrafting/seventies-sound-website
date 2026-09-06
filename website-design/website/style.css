@@ -549,6 +549,16 @@ footer {
         width: 100%
     }
 
+    .nav > a.active,
+    .nav .explore-toggle.active {
+        padding: 10px 12px;
+        background: #eee5d6;
+        border-bottom: 0;
+        border-left: 4px solid #934326;
+        border-radius: 3px;
+        text-align: left
+    }
+
     .explore-menu {
         position: static;
         left: auto;
