@@ -1,0 +1,50 @@
+[
+  {
+    "site": "abba",
+    "viewport": "desktop",
+    "url": "https://abbasite.com/",
+    "status": 200,
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  {
+    "site": "abba",
+    "viewport": "mobile",
+    "url": "https://abbasite.com/",
+    "status": 200,
+    "width": 390,
+    "scrollWidth": 390
+  },
+  {
+    "site": "great70s",
+    "viewport": "desktop",
+    "url": "https://thegreat70s.com/",
+    "status": 200,
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  {
+    "site": "great70s",
+    "viewport": "mobile",
+    "url": "https://thegreat70s.com/",
+    "status": 200,
+    "width": 390,
+    "scrollWidth": 390
+  },
+  {
+    "site": "rockhall",
+    "viewport": "desktop",
+    "url": "https://rockhall.com/inductees/inductees/",
+    "status": 200,
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  {
+    "site": "rockhall",
+    "viewport": "mobile",
+    "url": "https://rockhall.com/inductees/inductees/",
+    "status": 200,
+    "width": 390,
+    "scrollWidth": 390
+  }
+]

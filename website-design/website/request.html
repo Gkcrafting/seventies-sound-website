@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+      Seventies Sound - Request design
+    </title>
+    <link href="style.css" rel="stylesheet"/>
+    <script defer="" src="scripts/navigation.js">
+    </script>
+    <script defer="" src="scripts/request.js">
+    </script>
+  </head>
+  <body class="">
+    <header>
+      <div class="bar">
+        <a class="skip-link" href="#main-content">
+          Skip to content
+        </a>
+        <a href="index.html">
+          <img alt="Seventies Sound" class="logo" src="../assets/images/logo.svg"/>
+        </a>
+        <nav class="nav" id="site-nav">
+          <a class="" href="index.html">
+            Home
+          </a>
+          <div class="nav-dropdown">
+            <button aria-controls="explore-menu" aria-expanded="false" class="explore-toggle" type="button">
+              Explore
+            </button>
+            <div class="explore-menu" hidden="" id="explore-menu">
+              <a href="explore.html">
+                All music
+              </a>
+              <a href="explore.html#pop">
+                Pop
+              </a>
+              <a href="explore.html#glam">
+                Glam rock
+              </a>
+              <a href="explore.html#disco">
+                Disco
+              </a>
+              <a href="explore.html#rock">
+                Rock
+              </a>
+              <a href="explore.html#punk">
+                Punk
+              </a>
+              <a href="explore.html#reggae">
+                Reggae
+              </a>
+              <a href="explore.html#funk">
+                Funk and soul
+              </a>
+            </div>
+          </div>
+          <a class="active" href="request.html">
+            Request
+          </a>
+        </nav>
+        <button aria-controls="site-nav" aria-expanded="false" class="mobile-menu" type="button">
+          <img alt="" src="../assets/icons/menu.svg"/>
+          Menu
+        </button>
+        <form action="explore.html" class="search" method="get" role="search">
+          <input aria-label="Search artists or songs" name="q" placeholder="Search artists or songs" type="search"/>
+          <button aria-label="Search" type="submit">
+            <img alt="" src="../assets/icons/search.svg"/>
+          </button>
+        </form>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <div class="intro">
+        <p class="tag">
+          YOUR SUGGESTIONS
+        </p>
+        <h1>
+          What should we add?
+        </h1>
+        <p>
+          Suggest an artist, song or topic from the 1970s.
+        </p>
+      </div>
+      <div class="form-layout">
+        <form class="form-panel" id="request-form">
+          <label for="topic">
+            Artist, song or topic *
+          </label>
+          <input id="topic" placeholder="For example, more about ABBA" required=""/>
+          <label for="kind">
+            What would you like? *
+          </label>
+          <select id="kind" required="">
+            <option value="">
+              Choose a content type
+            </option>
+            <option>
+              Artist information
+            </option>
+            <option>
+              Song suggestion
+            </option>
+            <option>
+              Video
+            </option>
+          </select>
+          <label for="reason">
+            Anything else? (optional)
+          </label>
+          <textarea id="reason" maxlength="500"></textarea>
+          <p class="help">
+            Up to 500 characters. Please leave out personal details.
+          </p>
+          <a class="button" href="mailto:kilekwg25@foxford.coventry.sch.uk?cc=Kemi.Adeeko%40castlephoenixtrust.org.uk" id="email-request">
+            Send request
+          </a>
+          <p class="help">
+            * Required fields
+          </p>
+        </form>
+        <aside class="aside">
+          <h2>
+            Keep it about the music
+          </h2>
+          <p>
+            An artist name and a brief suggestion are enough.
+          </p>
+          <p>
+            Ideas could include another genre, an artist we have missed or a song you want to learn about.
+          </p>
+          <a href="#privacy">
+            How requests are handled ↓
+          </a>
+        </aside>
+      </div>
+      <section class="section" id="privacy">
+        <h2>
+          Privacy
+        </h2>
+        <p>
+          The request button opens your email app. This site does not save what you type. Do not include private details in a request.
+        </p>
+      </section>
+      <section class="section" id="credits">
+        <h2>
+          Credits
+        </h2>
+        <p>
+          Music information comes from artist sites, Rock Hall and Official Charts. The photos are from Wikimedia Commons and the credits are under each picture. The logo and record artwork were made for this project. Icons are from Lucide and Feather. Songwriters and music links are under each song.
+        </p>
+      </section>
+      <section class="section" id="accessibility">
+        <h2>
+          Accessibility
+        </h2>
+        <p>
+          The intro video has captions and a text version. You can use a keyboard to search, use the form and open the extra artist information.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <span class="footer-title">
+        Seventies Sound - A first look at 1970s music<br>
+        <small>Made by Glady Kilekwa</small>
+      </span>
+      <nav aria-label="Footer links" class="footer-links">
+        <a href="request.html#privacy">
+          Privacy
+        </a>
+        <a aria-label="Credits (new tab)" href="request.html#credits" rel="noopener" target="_blank">
+          Credits
+        </a>
+        <a href="request.html#accessibility">
+          Accessibility
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

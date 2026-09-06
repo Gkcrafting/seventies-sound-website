@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+      Seventies Sound - States design
+    </title>
+    <link href="../website/style.css" rel="stylesheet"/>
+    <script defer="" src="../website/scripts/navigation.js">
+    </script>
+  </head>
+  <body class="">
+    <header>
+      <div class="bar">
+        <a class="skip-link" href="#main-content">
+          Skip to content
+        </a>
+        <a href="../website/index.html">
+          <img alt="Seventies Sound" class="logo" src="../assets/images/logo.svg"/>
+        </a>
+        <nav class="nav" id="site-nav">
+          <a class="" href="../website/index.html">
+            Home
+          </a>
+          <div class="nav-dropdown">
+            <button aria-controls="explore-menu" aria-expanded="false" class="explore-toggle" type="button">
+              Explore
+            </button>
+            <div class="explore-menu" hidden="" id="explore-menu">
+              <a href="../website/explore.html">
+                All music
+              </a>
+              <a href="../website/explore.html#pop">
+                Pop
+              </a>
+              <a href="../website/explore.html#glam">
+                Glam rock
+              </a>
+              <a href="../website/explore.html#disco">
+                Disco
+              </a>
+            </div>
+          </div>
+          <a class="" href="../website/request.html">
+            Request
+          </a>
+        </nav>
+        <button aria-controls="site-nav" aria-expanded="false" class="mobile-menu" type="button">
+          <img alt="" src="../assets/icons/menu.svg"/>
+          Menu
+        </button>
+        <form action="../website/explore.html" class="search" method="get" role="search">
+          <input aria-label="Search artists or songs" name="q" placeholder="Search artists or songs" type="search"/>
+          <button aria-label="Search" type="submit">
+            <img alt="" src="../assets/icons/search.svg"/>
+          </button>
+        </form>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <h1>
+        Menus and feedback
+      </h1>
+      <p>
+        Design examples for the controls within the three pages.
+      </p>
+      <div class="split">
+        <section class="state">
+          <h2>
+            Explore menu open
+          </h2>
+          <div class="menu-state">
+            <strong>
+              Explore ▴
+            </strong>
+            <a href="../website/explore.html">
+              All music
+            </a>
+            <a href="../website/explore.html#pop">
+              Pop
+            </a>
+            <a href="../website/explore.html#glam">
+              Glam rock
+            </a>
+            <a href="../website/explore.html#disco">
+              Disco
+            </a>
+          </div>
+          <p class="small">
+            Click, touch or Enter opens the links. Escape closes the menu.
+          </p>
+        </section>
+        <section class="state">
+          <h2>
+            Search results
+          </h2>
+          <p>
+            Results for
+            <strong>
+              ABBA
+            </strong>
+          </p>
+          <a href="../website/explore.html#pop">
+            ABBA - Pop
+          </a>
+          <p class="small">
+            Waterloo and Dancing Queen
+          </p>
+          <details open="">
+            <summary>
+              More about the music
+            </summary>
+            <p>
+              Try comparing the chorus in Waterloo with the dance rhythm of Dancing Queen.
+            </p>
+          </details>
+          <hr/>
+          <p>
+            No results for "xyz".
+          </p>
+          <a href="../website/explore.html">
+            Browse all music
+          </a>
+          <p class="small">
+            Empty search: Enter an artist or song name.
+          </p>
+        </section>
+      </div>
+      <section class="state">
+        <div class="popup">
+          <div class="row">
+            <h2>
+              Donna Summer
+            </h2>
+            <button class="secondary">
+              Close ×
+            </button>
+          </div>
+          <figure class="photo">
+            <img alt="Donna Summer performing in 2009" loading="lazy" src="../assets/images/donna-summer.jpg"/>
+            <figcaption>
+              Donna Summer performing in 2009. Photo:
+              <a aria-label="Harry Wad (new tab)" href="https://commons.wikimedia.org/wiki/File:Nobel_Peace_Price_Concert_2009_Donna_Summer1.jpg" rel="noopener" target="_blank">
+                Harry Wad
+              </a>
+              ,
+              <a aria-label="CC BY-SA 3.0 (new tab)" href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener" target="_blank">
+                CC BY-SA 3.0
+              </a>
+              .
+            </figcaption>
+          </figure>
+        </div>
+        <p>
+          Escape or Close returns to the same image button. Keyboard focus stays inside the popup while it is open.
+        </p>
+      </section>
+      <div class="split">
+        <section class="state">
+          <h2>
+            Form error
+          </h2>
+          <label>
+            Artist, song or topic *
+          </label>
+          <input class="error"/>
+          <p class="message">
+            Enter an artist, song or topic.
+          </p>
+          <p class="small">
+            Keep the other entries. Move focus to this field.
+          </p>
+        </section>
+        <section class="state">
+          <h2>
+            Email request
+          </h2>
+          <a class="button" href="mailto:kilekwg25@foxford.coventry.sch.uk?cc=Kemi.Adeeko%40castlephoenixtrust.org.uk">
+            Send request
+          </a>
+          <p>
+            Got another song in mind? Let us know.
+          </p>
+          <p class="small">
+            If no email app opens, copy your suggestion and email kilekwg25@foxford.coventry.sch.uk, with Kemi.Adeeko@castlephoenixtrust.org.uk in CC.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <span>
+        Seventies Sound · A first look at 1970s music
+      </span>
+      <span>
+        <a href="../website/request.html#privacy">
+          Privacy
+        </a>
+        <a aria-label="Credits (new tab)" href="../website/request.html#credits" rel="noopener" target="_blank">
+          Credits
+        </a>
+        <a href="../website/request.html#accessibility">
+          Accessibility
+        </a>
+      </span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+{
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "liveServer.settings.host": "localhost"
+}

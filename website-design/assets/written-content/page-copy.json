@@ -1,0 +1,144 @@
+{
+  "site": "Seventies Sound",
+  "classic_tracks": [
+    {
+      "slug": "dancing-queen",
+      "title": "Dancing Queen",
+      "artist": "ABBA",
+      "year": 1976,
+      "genre": "pop disco",
+      "photo": "pop",
+      "video": "xFrGuyw1V8s",
+      "writers": "Benny Andersson, Bjorn Ulvaeus and Stig Anderson",
+      "note": "Pop vocals over a disco beat. Start with this if you know the chorus but not much about ABBA.",
+      "source": "https://abbasite.com/articles/dancing-queen/"
+    },
+    {
+      "slug": "starman",
+      "title": "Starman",
+      "artist": "David Bowie",
+      "year": 1972,
+      "genre": "glam",
+      "photo": "glam",
+      "video": "rpO1U-nEgRU",
+      "writers": "David Bowie",
+      "note": "A good place to start with Bowie's Ziggy Stardust period. Listen for the change as the chorus begins.",
+      "source": "https://www.davidbowie.com/blog/2022/7/6/starman-on-totp-fifty-years-ago-today"
+    },
+    {
+      "slug": "i-feel-love",
+      "title": "I Feel Love",
+      "artist": "Donna Summer",
+      "year": 1977,
+      "genre": "disco",
+      "photo": "disco",
+      "video": "yEbaeLv-aOo",
+      "writers": "Donna Summer, Giorgio Moroder and Pete Bellotte",
+      "note": "Summer's vocals sit over a repeating synth line. The song is from 1977; this official animated video came later.",
+      "source": "https://www.officialcharts.com/songs/donna-summer-i-feel-love/"
+    },
+    {
+      "slug": "dreams",
+      "title": "Dreams",
+      "artist": "Fleetwood Mac",
+      "year": 1977,
+      "genre": "rock",
+      "video": "mrZRURcb1cM",
+      "writers": "Stevie Nicks",
+      "note": "A steady drumbeat, soft guitar and Stevie Nicks' lead vocal make this a calm place to start.",
+      "source": "https://fleetwoodmac.com/"
+    },
+    {
+      "slug": "london-calling",
+      "title": "London Calling",
+      "artist": "The Clash",
+      "year": 1979,
+      "genre": "punk",
+      "video": "EfK-WX2pa8c",
+      "writers": "Joe Strummer and Mick Jones",
+      "note": "A louder 1979 choice with a fast bass line and an urgent vocal style.",
+      "source": "https://rockhall.com/inductees/the-clash/"
+    },
+    {
+      "slug": "three-little-birds",
+      "title": "Three Little Birds",
+      "artist": "Bob Marley and the Wailers",
+      "year": 1977,
+      "genre": "reggae",
+      "video": "HNBCVM4KbUM",
+      "writers": "Bob Marley",
+      "note": "A relaxed reggae song with off-beat guitar and backing voices.",
+      "source": "https://www.bobmarley.com/"
+    },
+    {
+      "slug": "september",
+      "title": "September",
+      "artist": "Earth, Wind and Fire",
+      "year": 1978,
+      "genre": "funk soul",
+      "video": "Gs069dndIYk",
+      "writers": "Maurice White, Al McKay and Allee Willis",
+      "note": "Bright brass, group vocals and a strong funk rhythm section.",
+      "source": "https://rockhall.com/inductees/earth-wind-fire/"
+    }
+  ],
+  "home": "New to the decade? Start with a style, meet an artist and find something to listen to.",
+  "artists": [
+    {
+      "genre": "Pop",
+      "artist": "ABBA",
+      "introduction": "Start with Waterloo, the song behind ABBA's 1974 Eurovision win. Then try Dancing Queen and read about how it was recorded.",
+      "notes": "Try comparing the strong chorus in Waterloo with the dance rhythm of Dancing Queen.",
+      "source": "https://abbasite.com/story/",
+      "further_reading": "https://abbasite.com/articles/dancing-queen/"
+    },
+    {
+      "genre": "Glam rock",
+      "artist": "David Bowie",
+      "introduction": "Explore Bowie's music and stage style. His Rock Hall profile is a useful place to start if you are new to his work.",
+      "notes": "Look at how the performance and clothing support the music. The source below gives more background.",
+      "source": "https://rockhall.com/inductees/david-bowie/",
+      "further_reading": "https://www.davidbowie.com/"
+    },
+    {
+      "genre": "Disco",
+      "artist": "Donna Summer",
+      "introduction": "Try I Feel Love. It entered the UK chart in July 1977 and is a starting point for this disco section.",
+      "notes": "Listen to the repeating electronic beat and how the voice fits around it.",
+      "source": "https://www.officialcharts.com/songs/donna-summer-i-feel-love/",
+      "further_reading": "https://rockhall.com/inductees/donna-summer/"
+    },
+    {
+      "genre": "Rock",
+      "artist": "Fleetwood Mac",
+      "introduction": "Try Dreams for a quieter rock sound from the 1977 album Rumours.",
+      "notes": "Listen for the repeating beat and the space around the vocal.",
+      "source": "https://fleetwoodmac.com/",
+      "further_reading": "https://www.youtube.com/watch?v=mrZRURcb1cM"
+    },
+    {
+      "genre": "Punk",
+      "artist": "The Clash",
+      "introduction": "London Calling is a louder 1979 choice with a fast bass line and urgent vocal style.",
+      "notes": "Listen to the bass and drums before the vocal comes in.",
+      "source": "https://rockhall.com/inductees/the-clash/",
+      "further_reading": "https://www.youtube.com/watch?v=EfK-WX2pa8c"
+    },
+    {
+      "genre": "Reggae",
+      "artist": "Bob Marley and the Wailers",
+      "introduction": "Three Little Birds is a relaxed reggae choice from the 1977 album Exodus.",
+      "notes": "Listen for the off-beat guitar and backing voices.",
+      "source": "https://www.bobmarley.com/",
+      "further_reading": "https://www.youtube.com/watch?v=HNBCVM4KbUM"
+    },
+    {
+      "genre": "Funk and soul",
+      "artist": "Earth, Wind and Fire",
+      "introduction": "September adds bright brass and funk rhythms to the selection.",
+      "notes": "Listen for the brass parts answering the lead vocal.",
+      "source": "https://rockhall.com/inductees/earth-wind-fire/",
+      "further_reading": "https://www.youtube.com/watch?v=Gs069dndIYk"
+    }
+  ]
+}

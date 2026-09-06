@@ -1,0 +1,18 @@
+{
+  "duration_seconds": 28.25,
+  "size": [
+    1280,
+    720
+  ],
+  "format": "H.264 MP4 + AAC",
+  "narration": "ElevenLabs Alice - Clear, Engaging Educator; AI-generated British narration",
+  "voice_id": "Xb7hH8MSUJpSbSDYk0k2",
+  "voice_model": "eleven_flash_v2_5",
+  "original_script": [
+    "Welcome to Seventies Sound. This is a short introduction to music from the nineteen seventies.",
+    "Start with pop, glam rock or disco. Each section introduces an artist and gives you a song to try.",
+    "Read the short introduction, open the extra facts, then follow a listening link to explore the music.",
+    "You can suggest another artist or topic on the Request page. This is a starting point, so there is more music to discover."
+  ],
+  "captions": "English WebVTT; scene-based sentence timing"
+}

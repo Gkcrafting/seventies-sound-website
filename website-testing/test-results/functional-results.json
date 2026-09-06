@@ -1,0 +1,67 @@
+[
+  {
+    "test": "index.html on a computer",
+    "result": "Pass",
+    "note": "Nothing went off the side of the page."
+  },
+  {
+    "test": "index.html on a phone",
+    "result": "Pass",
+    "note": "The page still fitted the phone screen."
+  },
+  {
+    "test": "explore.html on a computer",
+    "result": "Pass",
+    "note": "Nothing went off the side of the page."
+  },
+  {
+    "test": "explore.html on a phone",
+    "result": "Pass",
+    "note": "The page still fitted the phone screen."
+  },
+  {
+    "test": "request.html on a computer",
+    "result": "Pass",
+    "note": "Nothing went off the side of the page."
+  },
+  {
+    "test": "request.html on a phone",
+    "result": "Pass",
+    "note": "The page still fitted the phone screen."
+  },
+  {
+    "test": "Skip link",
+    "result": "Pass",
+    "note": "It took me straight to the main part of the page."
+  },
+  {
+    "test": "Explore menu",
+    "result": "Pass",
+    "note": "It opened, closed with Escape, then focus went back to the button."
+  },
+  {
+    "test": "Menu on phone",
+    "result": "Pass",
+    "note": "It opened and Escape closed it again."
+  },
+  {
+    "test": "Search and genre buttons",
+    "result": "Pass",
+    "note": "I could search for ABBA and then change the genre without it breaking."
+  },
+  {
+    "test": "Make image bigger",
+    "result": "Pass",
+    "note": "The picture opened bigger and Escape closed it."
+  },
+  {
+    "test": "Song video",
+    "result": "Pass",
+    "note": "Pressing Play put the YouTube video on the page. I checked the videos played in localhost too."
+  },
+  {
+    "test": "Request page",
+    "result": "Pass",
+    "note": "It would not make the email until I filled in the required boxes. Then it made the email with the client copied in."
+  }
+]

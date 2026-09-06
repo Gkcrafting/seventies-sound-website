@@ -1,0 +1,121 @@
+[
+  {
+    "song": "dancing-queen",
+    "page": "http://localhost:64640/website-design/website/explore.html",
+    "status": {
+      "text": "",
+      "response": null,
+      "playerResponse": null,
+      "video": [
+        {
+          "time": 8.114843,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "script_errors": []
+  },
+  {
+    "song": "starman",
+    "page": "http://localhost:64640/website-design/website/explore.html",
+    "status": {
+      "text": "foreign\n[Music]",
+      "response": null,
+      "playerResponse": null,
+      "video": [
+        {
+          "time": 11.2237,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "script_errors": []
+  },
+  {
+    "song": "i-feel-love",
+    "page": "http://localhost:64640/website-design/website/explore.html",
+    "status": {
+      "text": "(upbeat disco music)",
+      "response": null,
+      "playerResponse": null,
+      "video": [
+        {
+          "time": 11.543553,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "script_errors": []
+  },
+  {
+    "song": "dreams",
+    "page": "http://localhost:64640/website-design/website/explore.html",
+    "status": {
+      "text": "[Music]",
+      "response": null,
+      "playerResponse": null,
+      "video": [
+        {
+          "time": 11.3944,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "script_errors": []
+  },
+  {
+    "song": "london-calling",
+    "page": "http://localhost:64640/website-design/website/explore.html",
+    "status": {
+      "text": "",
+      "response": null,
+      "playerResponse": null,
+      "video": [
+        {
+          "time": 11.308931,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "script_errors": []
+  },
+  {
+    "song": "three-little-birds",
+    "page": "http://localhost:64640/website-design/website/explore.html",
+    "status": {
+      "text": "",
+      "response": null,
+      "playerResponse": null,
+      "video": [
+        {
+          "time": 11.606383,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "script_errors": []
+  },
+  {
+    "song": "september",
+    "page": "http://localhost:64640/website-design/website/explore.html",
+    "status": {
+      "text": "",
+      "response": null,
+      "playerResponse": null,
+      "video": [
+        {
+          "time": 11.473941,
+          "paused": false,
+          "ready": 4
+        }
+      ]
+    },
+    "script_errors": []
+  }
+]

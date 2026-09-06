@@ -1,0 +1,72 @@
+[
+  {
+    "page": "home-draft",
+    "view": "desktop",
+    "width": 1280,
+    "page_width": 1280,
+    "height": 1992
+  },
+  {
+    "page": "home-draft",
+    "view": "mobile",
+    "width": 390,
+    "page_width": 390,
+    "height": 3428
+  },
+  {
+    "page": "home",
+    "view": "desktop",
+    "width": 1280,
+    "page_width": 1280,
+    "height": 1733
+  },
+  {
+    "page": "home",
+    "view": "mobile",
+    "width": 390,
+    "page_width": 390,
+    "height": 3033
+  },
+  {
+    "page": "explore",
+    "view": "desktop",
+    "width": 1280,
+    "page_width": 1280,
+    "height": 4082
+  },
+  {
+    "page": "explore",
+    "view": "mobile",
+    "width": 390,
+    "page_width": 390,
+    "height": 6382
+  },
+  {
+    "page": "request",
+    "view": "desktop",
+    "width": 1280,
+    "page_width": 1280,
+    "height": 1488
+  },
+  {
+    "page": "request",
+    "view": "mobile",
+    "width": 390,
+    "page_width": 390,
+    "height": 2093
+  },
+  {
+    "page": "states",
+    "view": "desktop",
+    "width": 1280,
+    "page_width": 1280,
+    "height": 2337
+  },
+  {
+    "page": "states",
+    "view": "mobile",
+    "width": 390,
+    "page_width": 390,
+    "height": 2896
+  }
+]

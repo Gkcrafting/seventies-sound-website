@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>
+      Seventies Sound - Explore design
+    </title>
+    <link href="style.css" rel="stylesheet"/>
+    <script defer="" src="scripts/navigation.js">
+    </script>
+    <script defer="" src="scripts/images.js">
+    </script>
+    <script defer="" src="scripts/music.js">
+    </script>
+    <script defer="" src="scripts/search.js">
+    </script>
+  </head>
+  <body class="">
+    <header>
+      <div class="bar">
+        <a class="skip-link" href="#main-content">
+          Skip to content
+        </a>
+        <a href="index.html">
+          <img alt="Seventies Sound" class="logo" src="../assets/images/logo.svg"/>
+        </a>
+        <nav class="nav" id="site-nav">
+          <a class="" href="index.html">
+            Home
+          </a>
+          <div class="nav-dropdown">
+            <button aria-controls="explore-menu" aria-expanded="false" class="explore-toggle active" type="button">
+              Explore
+            </button>
+            <div class="explore-menu" hidden="" id="explore-menu">
+              <a href="explore.html">
+                All music
+              </a>
+              <a href="explore.html#pop">
+                Pop
+              </a>
+              <a href="explore.html#glam">
+                Glam rock
+              </a>
+              <a href="explore.html#disco">
+                Disco
+              </a>
+              <a href="explore.html#rock">
+                Rock
+              </a>
+              <a href="explore.html#punk">
+                Punk
+              </a>
+              <a href="explore.html#reggae">
+                Reggae
+              </a>
+              <a href="explore.html#funk">
+                Funk and soul
+              </a>
+            </div>
+          </div>
+          <a class="" href="request.html">
+            Request
+          </a>
+        </nav>
+        <button aria-controls="site-nav" aria-expanded="false" class="mobile-menu" type="button">
+          <img alt="" src="../assets/icons/menu.svg"/>
+          Menu
+        </button>
+        <form action="explore.html" class="search" method="get" role="search">
+          <input aria-label="Search artists or songs" name="q" placeholder="Search artists or songs" type="search"/>
+          <button aria-label="Search" type="submit">
+            <img alt="" src="../assets/icons/search.svg"/>
+          </button>
+        </form>
+      </div>
+    </header>
+    <main id="main-content" tabindex="-1">
+      <div class="intro">
+        <p class="tag">
+          EXPLORE
+        </p>
+        <h1>
+          Seven ways into the 70s.
+        </h1>
+        <p>
+          Choose a style, meet an artist and play a song. Search above if you have a name in mind.
+        </p>
+      </div>
+      <section aria-labelledby="search-heading" hidden="" id="search-results">
+        <h2 id="search-heading" tabindex="-1">
+          Search results
+        </h2>
+        <p id="search-message" role="status">
+        </p>
+        <a href="explore.html">
+          Show all music
+        </a>
+      </section>
+      <div class="filters">
+        <button aria-pressed="true" class="chip selected" data-genre="all" type="button">
+          All music
+        </button>
+        <button aria-pressed="false" class="chip" data-genre="pop" type="button">
+          Pop
+        </button>
+        <button aria-pressed="false" class="chip" data-genre="glam" type="button">
+          Glam rock
+        </button>
+        <button aria-pressed="false" class="chip" data-genre="disco" type="button">
+          Disco
+        </button>
+        <button aria-pressed="false" class="chip" data-genre="rock" type="button">
+          Rock
+        </button>
+        <button aria-pressed="false" class="chip" data-genre="punk" type="button">
+          Punk
+        </button>
+        <button aria-pressed="false" class="chip" data-genre="reggae" type="button">
+          Reggae
+        </button>
+        <button aria-pressed="false" class="chip" data-genre="funk" type="button">
+          Funk and soul
+        </button>
+      </div>
+      <section aria-label="Artists and songs" id="listening">
+        <article class="artist music-sample classic-track" data-genres="pop disco" id="pop">
+          <div>
+            <figure class="photo">
+              <img alt="ABBA at TopPop, 1974" loading="lazy" src="../assets/images/abba.jpg"/>
+              <figcaption>
+                ABBA at TopPop, 1974. Photo:
+                <a aria-label="AVRO (new tab)" href="https://commons.wikimedia.org/wiki/File:ABBA1974TopPop.jpg" rel="noopener" target="_blank">
+                  AVRO
+                </a>
+                ,
+                <a aria-label="CC BY 3.0 (new tab)" href="https://creativecommons.org/licenses/by/3.0/" rel="noopener" target="_blank">
+                  CC BY 3.0
+                </a>
+                .
+              </figcaption>
+            </figure>
+            <button aria-haspopup="dialog" class="secondary enlarge-image" type="button">
+              Enlarge image
+            </button>
+          </div>
+          <div id="dancing-queen">
+            <p class="tag">
+              POP
+            </p>
+            <h2>
+              ABBA
+            </h2>
+            <p>
+              Start with Waterloo, the song behind ABBA's 1974 Eurovision win. Then try Dancing Queen and read about how it was recorded.
+            </p>
+            <h3>
+              Dancing Queen · 1976
+            </h3>
+            <p>
+              Pop vocals over a disco beat. Start with this if you know the chorus but not much about ABBA.
+            </p>
+            <div class="youtube-player" data-title="Dancing Queen by ABBA" data-video="xFrGuyw1V8s">
+              <button class="button load-video" type="button">
+                Play Dancing Queen
+              </button>
+            </div>
+            <p>
+              <a aria-label="Watch on YouTube (new tab)" href="https://www.youtube.com/watch?v=xFrGuyw1V8s" rel="noopener" target="_blank">
+                Watch on YouTube
+              </a>
+            </p>
+            <details>
+              <summary>
+                More about the music
+              </summary>
+              <p>
+                Try comparing the strong chorus in Waterloo with the dance rhythm of Dancing Queen.
+              </p>
+              <p>
+                Written by Benny Andersson, Bjorn Ulvaeus and Stig Anderson.
+                <a aria-label="About the song (new tab)" href="https://abbasite.com/articles/dancing-queen/" rel="noopener" target="_blank">
+                  About the song
+                </a>
+                .
+              </p>
+              <p>
+                The official video is played from YouTube and belongs to its owners.
+              </p>
+            </details>
+            <div class="links">
+              <a aria-label="Artist source (new tab)" href="https://abbasite.com/story/" rel="noopener" target="_blank">
+                Artist source
+              </a>
+              <a href="request.html">
+                Request more about ABBA
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="artist music-sample classic-track" data-genres="glam" id="glam">
+          <div>
+            <figure class="photo">
+              <img alt="David Bowie at TopPop, 1974" loading="lazy" src="../assets/images/david-bowie.png"/>
+              <figcaption>
+                David Bowie at TopPop, 1974. Photo:
+                <a aria-label="AVRO (new tab)" href="https://commons.wikimedia.org/wiki/File:David_Bowie_-_TopPop_1974_10.png" rel="noopener" target="_blank">
+                  AVRO
+                </a>
+                ,
+                <a aria-label="CC BY-SA 3.0 NL (new tab)" href="https://creativecommons.org/licenses/by-sa/3.0/nl/" rel="noopener" target="_blank">
+                  CC BY-SA 3.0 NL
+                </a>
+                .
+              </figcaption>
+            </figure>
+            <button aria-haspopup="dialog" class="secondary enlarge-image" type="button">
+              Enlarge image
+            </button>
+          </div>
+          <div id="starman">
+            <p class="tag">
+              GLAM ROCK
+            </p>
+            <h2>
+              David Bowie
+            </h2>
+            <p>
+              Explore Bowie's music and stage style. His Rock Hall profile is a useful place to start if you are new to his work.
+            </p>
+            <h3>
+              Starman · 1972
+            </h3>
+            <p>
+              A good place to start with Bowie's Ziggy Stardust period. Listen for the change as the chorus begins.
+            </p>
+            <div class="youtube-player" data-title="Starman by David Bowie" data-video="rpO1U-nEgRU">
+              <button class="button load-video" type="button">
+                Play Starman
+              </button>
+            </div>
+            <p>
+              <a aria-label="Watch on YouTube (new tab)" href="https://www.youtube.com/watch?v=rpO1U-nEgRU" rel="noopener" target="_blank">
+                Watch on YouTube
+              </a>
+            </p>
+            <details>
+              <summary>
+                More about the music
+              </summary>
+              <p>
+                Look at how the performance and clothing support the music. The source below gives more background.
+              </p>
+              <p>
+                Written by David Bowie.
+                <a aria-label="About the song (new tab)" href="https://www.davidbowie.com/blog/2022/7/6/starman-on-totp-fifty-years-ago-today" rel="noopener" target="_blank">
+                  About the song
+                </a>
+                .
+              </p>
+              <p>
+                The official video is played from YouTube and belongs to its owners.
+              </p>
+            </details>
+            <div class="links">
+              <a aria-label="Artist source (new tab)" href="https://rockhall.com/inductees/david-bowie/" rel="noopener" target="_blank">
+                Artist source
+              </a>
+              <a href="request.html">
+                Request more about David Bowie
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="artist music-sample classic-track" data-genres="disco" id="disco">
+          <div>
+            <figure class="photo">
+              <img alt="Donna Summer performing in 2009" loading="lazy" src="../assets/images/donna-summer.jpg"/>
+              <figcaption>
+                Donna Summer performing in 2009. Photo:
+                <a aria-label="Harry Wad (new tab)" href="https://commons.wikimedia.org/wiki/File:Nobel_Peace_Price_Concert_2009_Donna_Summer1.jpg" rel="noopener" target="_blank">
+                  Harry Wad
+                </a>
+                ,
+                <a aria-label="CC BY-SA 3.0 (new tab)" href="https://creativecommons.org/licenses/by-sa/3.0/" rel="noopener" target="_blank">
+                  CC BY-SA 3.0
+                </a>
+                .
+              </figcaption>
+            </figure>
+            <button aria-haspopup="dialog" class="secondary enlarge-image" type="button">
+              Enlarge image
+            </button>
+          </div>
+          <div id="i-feel-love">
+            <p class="tag">
+              DISCO
+            </p>
+            <h2>
+              Donna Summer
+            </h2>
+            <p>
+              Try I Feel Love. It entered the UK chart in July 1977 and is a starting point for this disco section.
+            </p>
+            <h3>
+              I Feel Love · 1977
+            </h3>
+            <p>
+              Summer's vocals sit over a repeating synth line. The song is from 1977; this official animated video came later.
+            </p>
+            <div class="youtube-player" data-title="I Feel Love by Donna Summer" data-video="yEbaeLv-aOo">
+              <button class="button load-video" type="button">
+                Play I Feel Love
+              </button>
+            </div>
+            <p>
+              <a aria-label="Watch on YouTube (new tab)" href="https://www.youtube.com/watch?v=yEbaeLv-aOo" rel="noopener" target="_blank">
+                Watch on YouTube
+              </a>
+            </p>
+            <details>
+              <summary>
+                More about the music
+              </summary>
+              <p>
+                Listen to the repeating electronic beat and how the voice fits around it.
+              </p>
+              <p>
+                Written by Donna Summer, Giorgio Moroder and Pete Bellotte.
+                <a aria-label="About the song (new tab)" href="https://www.officialcharts.com/songs/donna-summer-i-feel-love/" rel="noopener" target="_blank">
+                  About the song
+                </a>
+                .
+              </p>
+              <p>
+                The official video is played from YouTube and belongs to its owners.
+              </p>
+            </details>
+            <div class="links">
+              <a aria-label="Artist source (new tab)" href="https://www.officialcharts.com/songs/donna-summer-i-feel-love/" rel="noopener" target="_blank">
+                Artist source
+              </a>
+              <a href="request.html">
+                Request more about Donna Summer
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="artist music-sample classic-track" data-genres="rock" id="rock">
+          <div>
+            <figure class="photo">
+              <img alt="Fleetwood Mac, 1977" loading="lazy" src="../assets/images/fleetwood-mac.jpg"/>
+              <figcaption>
+                Fleetwood Mac, 1977. Photo: <a aria-label="Warner Bros. Records source (new tab)" href="https://commons.wikimedia.org/wiki/File:Fleetwood_Mac_(1977).jpg" rel="noopener" target="_blank">Warner Bros. Records</a>, public domain.
+              </figcaption>
+            </figure>
+            <button aria-haspopup="dialog" class="secondary enlarge-image" type="button">Enlarge image</button>
+          </div>
+          <div id="dreams">
+            <p class="tag">ROCK</p>
+            <h2>Fleetwood Mac</h2>
+            <p>Try Dreams for a quieter rock sound. It came from the 1977 album Rumours.</p>
+            <h3>Dreams · 1977</h3>
+            <p>A steady drumbeat, soft guitar and Stevie Nicks' lead vocal make this a calm place to start.</p>
+            <div class="youtube-player" data-title="Dreams by Fleetwood Mac" data-video="mrZRURcb1cM">
+              <button class="button load-video" type="button">Play Dreams</button>
+            </div>
+            <p><a aria-label="Watch on YouTube (new tab)" href="https://www.youtube.com/watch?v=mrZRURcb1cM" rel="noopener" target="_blank">Watch on YouTube</a></p>
+            <details>
+              <summary>More about the music</summary>
+              <p>Listen for how the repeating beat gives the song space, rather than making it feel busy.</p>
+              <p>Written by Stevie Nicks. The official video is played from YouTube and belongs to its owners.</p>
+            </details>
+            <div class="links">
+              <a aria-label="Artist source (new tab)" href="https://fleetwoodmac.com/" rel="noopener" target="_blank">Artist source</a>
+              <a href="request.html">Request more about Fleetwood Mac</a>
+            </div>
+          </div>
+        </article>
+        <article class="artist music-sample classic-track" data-genres="punk" id="punk">
+          <div>
+            <figure class="photo">
+              <img alt="The Clash performing in 1980" loading="lazy" src="../assets/images/the-clash.jpg"/>
+              <figcaption>
+                The Clash performing in 1980. Photo: <a aria-label="Helge Øverås source (new tab)" href="https://commons.wikimedia.org/wiki/File:Clash_21051980_12_800.jpg" rel="noopener" target="_blank">Helge Øverås</a>, <a aria-label="CC BY-SA 4.0 (new tab)" href="https://creativecommons.org/licenses/by-sa/4.0/" rel="noopener" target="_blank">CC BY-SA 4.0</a>.
+              </figcaption>
+            </figure>
+            <button aria-haspopup="dialog" class="secondary enlarge-image" type="button">Enlarge image</button>
+          </div>
+          <div id="london-calling">
+            <p class="tag">PUNK</p>
+            <h2>The Clash</h2>
+            <p>London Calling is a louder choice from 1979, with a fast bass line and a more urgent vocal style.</p>
+            <h3>London Calling · 1979</h3>
+            <p>This is a good contrast with the smoother pop and disco songs on the page.</p>
+            <div class="youtube-player" data-title="London Calling by The Clash" data-video="EfK-WX2pa8c">
+              <button class="button load-video" type="button">Play London Calling</button>
+            </div>
+            <p><a aria-label="Watch on YouTube (new tab)" href="https://www.youtube.com/watch?v=EfK-WX2pa8c" rel="noopener" target="_blank">Watch on YouTube</a></p>
+            <details>
+              <summary>More about the music</summary>
+              <p>Listen to the bass and drums first, then notice how the vocal is more direct than the other songs here.</p>
+              <p>Written by Joe Strummer and Mick Jones. The official video is played from YouTube and belongs to its owners.</p>
+            </details>
+            <div class="links">
+              <a aria-label="Artist source (new tab)" href="https://rockhall.com/inductees/the-clash/" rel="noopener" target="_blank">Artist source</a>
+              <a href="request.html">Request more about The Clash</a>
+            </div>
+          </div>
+        </article>
+        <article class="artist music-sample classic-track" data-genres="reggae" id="reggae">
+          <div>
+            <figure class="photo">
+              <img alt="Bob Marley, 1977" loading="lazy" src="../assets/images/bob-marley.jpg"/>
+              <figcaption>
+                Bob Marley, 1977. Photo: <a aria-label="Kim Gottlieb source (new tab)" href="https://commons.wikimedia.org/wiki/File:Bob_Marley_1977_press_photo.jpg" rel="noopener" target="_blank">Kim Gottlieb</a>, public domain.
+              </figcaption>
+            </figure>
+            <button aria-haspopup="dialog" class="secondary enlarge-image" type="button">Enlarge image</button>
+          </div>
+          <div id="three-little-birds">
+            <p class="tag">REGGAE</p>
+            <h2>Bob Marley and the Wailers</h2>
+            <p>Three Little Birds is a relaxed reggae choice from the 1977 album Exodus.</p>
+            <h3>Three Little Birds · 1977</h3>
+            <p>Listen for the off-beat guitar and the backing voices joining the main line.</p>
+            <div class="youtube-player" data-title="Three Little Birds by Bob Marley and the Wailers" data-video="HNBCVM4KbUM">
+              <button class="button load-video" type="button">Play Three Little Birds</button>
+            </div>
+            <p><a aria-label="Watch on YouTube (new tab)" href="https://www.youtube.com/watch?v=HNBCVM4KbUM" rel="noopener" target="_blank">Watch on YouTube</a></p>
+            <details>
+              <summary>More about the music</summary>
+              <p>The rhythm leaves space between the beats. Compare this feel with the continuous disco beat in I Feel Love.</p>
+              <p>Written by Bob Marley. The official video is played from YouTube and belongs to its owners.</p>
+            </details>
+            <div class="links">
+              <a aria-label="Artist source (new tab)" href="https://www.bobmarley.com/" rel="noopener" target="_blank">Artist source</a>
+              <a href="request.html">Request more about Bob Marley</a>
+            </div>
+          </div>
+        </article>
+        <article class="artist music-sample classic-track" data-genres="funk" id="funk">
+          <div>
+            <figure class="photo">
+              <img alt="Earth, Wind and Fire, 1970s" loading="lazy" src="../assets/images/earth-wind-and-fire.jpg"/>
+              <figcaption>
+                Earth, Wind and Fire, 1970s. Photo: <a aria-label="Columbia Records source (new tab)" href="https://commons.wikimedia.org/wiki/File:Earth_Wind_and_Fire_1970s_press_photo.jpg" rel="noopener" target="_blank">Columbia Records</a>, public domain.
+              </figcaption>
+            </figure>
+            <button aria-haspopup="dialog" class="secondary enlarge-image" type="button">Enlarge image</button>
+          </div>
+          <div id="september">
+            <p class="tag">FUNK AND SOUL</p>
+            <h2>Earth, Wind and Fire</h2>
+            <p>September adds bright brass and funk rhythms to the selection.</p>
+            <h3>September · 1978</h3>
+            <p>Start here if you want a song with a strong rhythm section, horns and group vocals.</p>
+            <div class="youtube-player" data-title="September by Earth, Wind and Fire" data-video="Gs069dndIYk">
+              <button class="button load-video" type="button">Play September</button>
+            </div>
+            <p><a aria-label="Watch on YouTube (new tab)" href="https://www.youtube.com/watch?v=Gs069dndIYk" rel="noopener" target="_blank">Watch on YouTube</a></p>
+            <details>
+              <summary>More about the music</summary>
+              <p>Listen for the brass parts answering the vocal. The rhythm is closely linked to funk, but the song also has a pop chorus.</p>
+              <p>Written by Maurice White, Al McKay and Allee Willis. The official video is played from YouTube and belongs to its owners.</p>
+            </details>
+            <div class="links">
+              <a aria-label="Artist source (new tab)" href="https://rockhall.com/inductees/earth-wind-fire/" rel="noopener" target="_blank">Artist source</a>
+              <a href="request.html">Request more about Earth, Wind and Fire</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <span class="footer-title">
+        Seventies Sound - A first look at 1970s music<br>
+        <small>Made by Glady Kilekwa</small>
+      </span>
+      <nav aria-label="Footer links" class="footer-links">
+        <a href="request.html#privacy">
+          Privacy
+        </a>
+        <a aria-label="Credits (new tab)" href="request.html#credits" rel="noopener" target="_blank">
+          Credits
+        </a>
+        <a href="request.html#accessibility">
+          Accessibility
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
