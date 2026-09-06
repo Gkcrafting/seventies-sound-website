@@ -8,7 +8,7 @@ const cards = document.querySelectorAll('.artist, .music-sample');
 const chips = document.querySelectorAll('[data-genre]');
 
 function normalise(text) {
-    return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+    return text.toLowerCase().trim();
 }
 
 function showResults() {
@@ -26,7 +26,7 @@ function showResults() {
     searchInput.value = query || '';
     results.hidden = query === null && genre === 'all';
     let words = [];
-    if (query) words = normalise(query).split(/\s+/).filter(Boolean);
+    if (query && query.trim() !== '') words = normalise(query).split(/\s+/);
     let count = 0;
 
     for (const chip of chips) {
