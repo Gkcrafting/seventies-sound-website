@@ -39,7 +39,7 @@ def add_task3(doc):
         5.7,
     )
     p(
-        "I kept all the artists on Explore because it is easier to look through them in one place. Search takes you there too. The genre buttons still work with search, so you can look for ABBA while keeping Pop selected. The request link checks the required boxes before it opens an email."
+        "I kept all the artists on Explore because it is easier to look through them in one place. Search takes you there too. The genre buttons clear the search and show the selected genre. The request link checks the required boxes before it opens an email."
     )
     h("Changes made while building")
     p(
@@ -69,6 +69,16 @@ def add_task3(doc):
                     run.font.size = Pt(9)
     p(
         "Everything above worked. I also played each of the seven videos in localhost. They all started and I did not get any script errors. That check is saved in website-design/draft-review/embed-checks.json."
+    )
+    h("Usability testing")
+    p(
+        "I made a short online feedback form so I can get opinions from classmates, friends, family and my teacher. I want people with different levels of interest in 1970s music to try the website, so I can see if it works for beginners as well as people who already know the songs."
+    )
+    p(
+        "The form asks people to find music, use the search and genre buttons, open extra information, view a larger photo, try a video and use the Request page. It asks what was easy, what was confusing, how the site worked on their device and what should be improved. Name and age are optional, and the form does not ask for email addresses or other private information."
+    )
+    p(
+        "I will look for repeated comments and ratings instead of changing the site because of one answer. The questions and testing plan are saved in website-testing/usability-testing.md. The feedback form is available at https://6nwnojh1fz.zite.so."
     )
     h("Review")
     p(

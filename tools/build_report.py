@@ -94,39 +94,47 @@ table(
     ],
 )
 heading("Site map and page plan")
-# Keep the diagram simple; the table below contains the detailed annotations.
-im = Image.new("RGB", (1300, 440), "white")
+# Show the page structure and navigation flow with a simple palette.
+im = Image.new("RGB", (1500, 900), "white")
 draw = ImageDraw.Draw(im)
-font = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial.ttf", 28)
-for x, title, filename in [
-    (20, "Home", "index.html"),
-    (460, "Explore", "explore.html"),
-    (900, "Request", "request.html"),
-]:
-    draw.rectangle((x, 80, x + 380, 365), outline="black", width=3)
-    draw.text((x + 25, 105), title, font=font, fill="black")
-    draw.text((x + 25, 160), filename, font=font, fill="black")
-    notes = {
-        "Home": ["Intro and timeline", "Genre links and video"],
-        "Explore": ["Artists and search", "Accordion and image modal"],
-        "Request": ["Content request form", "Privacy and credits"],
-    }
-    for y, note in zip((230, 280), notes[title]):
-        draw.text(
-            (x + 20, y),
-            note,
-            font=ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial.ttf", 23),
-            fill="black",
-        )
-draw.line((210, 80, 210, 35, 1090, 35, 1090, 80), fill="black", width=3)
-draw.line((650, 35, 650, 80), fill="black", width=3)
+font_path = "/System/Library/Fonts/Supplemental/Arial.ttf"
+bold_path = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+title_font = ImageFont.truetype(bold_path, 40)
+heading_font = ImageFont.truetype(bold_path, 32)
+body_font = ImageFont.truetype(font_path, 28)
+small_font = ImageFont.truetype(font_path, 25)
+accent = "black"
+ink = "black"
+green = "black"
+card_fill = "white"
+
+draw.rectangle((550, 35, 950, 125), fill=card_fill, outline=accent, width=3)
+draw.text((625, 62), "Site navigation", font=heading_font, fill=ink)
+draw.line((750, 125, 750, 175), fill=accent, width=4)
+
+pages = [
+    (55, "Home", "index.html", ["Intro and genre cards", "Timeline and video", "Captions and text version"]),
+    (520, "Explore", "explore.html", ["Artists and songs", "Search and genre chips", "Accordions, photos and video"]),
+    (985, "Request", "request.html", ["Suggestion form", "Email request only", "Privacy, credits, access"]),
+]
+for x, title, filename, notes in pages:
+    draw.rectangle((x, 175, x + 410, 820), fill=card_fill, outline=accent, width=3)
+    draw.text((x + 25, 215), title, font=title_font, fill=ink)
+    draw.text((x + 25, 285), filename, font=body_font, fill=accent)
+    draw.line((x + 25, 350, x + 385, 350), fill=accent, width=2)
+    for index, note in enumerate(notes):
+        draw.ellipse((x + 28, 405 + index * 105, x + 46, 423 + index * 105), fill=green)
+        draw.text((x + 65, 393 + index * 105), note, font=small_font, fill=ink)
+
+draw.line((260, 175, 260, 150, 1180, 150, 1180, 175), fill=accent, width=4)
+draw.line((750, 125, 750, 150), fill=accent, width=4)
 im.save(research / "site-map.png")
 doc.add_picture(str(research / "site-map.png"), width=Inches(6.6))
 doc.inline_shapes[-1]._inline.docPr.set(
-    "descr", "Home, Explore and Request are connected through the shared navigation."
+    "descr", "Annotated site map showing shared navigation, page features and mobile behavior."
 )
 p(
-    "All three pages share the same navigation. Explore has genre shortcuts, and on a phone the links open inside Menu."
+    "The same navigation is used on every page. Explore has genre filters and search, and on phones the links open inside Menu."
 )
 table(
     ["Page", "Content and features"],
