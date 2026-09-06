@@ -1,17 +1,18 @@
 # Seventies Sound
 
-This project was created as my Unit 3 website development assignment.
+This project was created as a Pearson Set Assignment (PSA) for my AAQ BTEC IT course in Year 13 (Y13).
 
 ## Assignment details
 
 - **Student:** Glady Kilekwa
 - **Year:** 2026
-- **Qualification framework:** Pearson
+- **Qualification:** AAQ BTEC IT
+- **Year group:** Year 13 (Y13)
 - **Course/unit:** Unit 3: Website Development
-- **Assignment:** Website Development - Seventies Sound
+- **Assignment:** Pearson Set Assignment (PSA) - Seventies Sound
 - **Report date:** 5 September 2026
 
-Seventies Sound is a three-page website introducing 1970s music to people aged 17-23. It is designed as a friendly starting point for visitors who are either new to the decade or already know a song and want to discover more.
+Seventies Sound explores 1970s music through artist profiles, genre browsing, search, official listening links, and accessible multimedia content.
 
 ## Project brief
 

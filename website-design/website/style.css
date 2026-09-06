@@ -536,18 +536,21 @@ footer {
 
     .nav.open {
         display: flex;
+        flex-direction: column;
         width: 100%;
         order: 3;
-        justify-content: space-between;
+        align-items: stretch;
         gap: 16px;
         padding-top: 8px
     }
 
     .nav-dropdown {
-        position: static
+        position: static;
+        width: 100%
     }
 
     .explore-menu {
+        position: static;
         left: auto;
         width: 100%;
         margin-top: 8px
